@@ -4,15 +4,22 @@
 module.exports = {
   siteMetadata: {
     title: `Is Your Website Good?`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://isyourwebsitegood.com`
   },
   plugins: [{
     resolve: 'gatsby-source-sanity',
     options: {
-      "projectId": "cyabmhso",
-      "dataset": ""
+      "projectId": "1ei8rzqn",
+      "dataset": "production"
     }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-styled-components", "gatsby-plugin-google-gtag", "gatsby-plugin-sitemap", {
+  }, 
+  "gatsby-plugin-image", 
+  "gatsby-plugin-sharp", 
+  "gatsby-transformer-sharp", 
+  "gatsby-plugin-styled-components", 
+  "gatsby-plugin-google-gtag", 
+  "gatsby-plugin-sitemap", 
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
