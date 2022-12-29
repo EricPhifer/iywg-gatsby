@@ -2,6 +2,7 @@ import MuxPlayer from '@mux/mux-player-react';
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import Seo from '../components/Seo';
 
 const HomeStyles = styled.main`
   max-width: 1080px;
@@ -88,6 +89,7 @@ export default function HomeTemplate({data}) {
   const posts = data.posts.nodes;
   return (
     <>
+      <Seo title="Home Page"/>
       <HomeStyles>
         <div className='header'>
           <h1>What Makes a website good?</h1>

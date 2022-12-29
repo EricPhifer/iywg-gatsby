@@ -39,29 +39,30 @@ const PostStyles = styled.div`
 export default function PostTemplate({ data: { posts } }) {
   return (
     <>
-        <div className='nodeParser' key={posts.id}>
-          <PostStyles>
-            <h1>{posts.title}</h1>
-            <h2>Published: {new Date(posts.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }).replace(',', '')}</h2>
-            {posts.video === null ? 
-              <MuxPlayer />
-              : <MuxPlayer 
-                streamType='on-demand'
-                playbackId={posts.video.asset.playbackId}
-                metadata={{
-                  video_id: `${posts.video.asset.assetId}`,
-                  video_title: `${posts.title}`,
-                }}
-              /> 
-            }
-            <div className="sectionContent">
-              <PortableText 
-                value={posts._rawBody}
-                components={defaultComponents}
-              />
-            </div>
-          </PostStyles>
-        </div>
+      <Seo title={`${posts.title} Review`}/>
+      <div className='nodeParser' key={posts.id}>
+        <PostStyles>
+          <h1>{posts.title}</h1>
+          <h2>Published: {new Date(posts.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }).replace(',', '')}</h2>
+          {posts.video === null ? 
+            <MuxPlayer />
+            : <MuxPlayer 
+              streamType='on-demand'
+              playbackId={posts.video.asset.playbackId}
+              metadata={{
+                video_id: `${posts.video.asset.assetId}`,
+                video_title: `${posts.title}`,
+              }}
+            /> 
+          }
+          <div className="sectionContent">
+            <PortableText 
+              value={posts._rawBody}
+              components={defaultComponents}
+            />
+          </div>
+        </PostStyles>
+      </div>
     </>
   )
 }
