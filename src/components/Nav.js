@@ -1,8 +1,10 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import SanityImage from 'gatsby-plugin-sanity-image';
 import React from 'react';
-import { AiOutlineSearch } from 'react-icons/ai';
 import styled from 'styled-components';
+import Search from './search';
+
+const searchIndices = [{ name: `Pages`, title: `Pages` }]
 
 const Navigation = styled.nav`
   width: 100vw;
@@ -90,12 +92,7 @@ const nodes = navitems.nodes;
                 }}
               />
             </Link>
-            <div className='search inline'>
-              <input type="search" placeholder='Looking for...'/>
-              <button type='submit'>
-                <AiOutlineSearch />
-              </button>
-            </div>
+            <Search indices={searchIndices} />
           </div>
         ))}
       </Navigation>
