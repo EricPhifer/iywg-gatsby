@@ -3,6 +3,7 @@ import { defaultComponents, PortableText } from '@portabletext/react';
 import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import Seo from '../components/Seo';
 
 const PostStyles = styled.div`
   max-width: 1080px;
@@ -39,7 +40,7 @@ const PostStyles = styled.div`
 export default function PostTemplate({ data: { posts } }) {
   return (
     <>
-      <Seo title='Posted Reviews'/>
+      <Seo title={`${posts.title} Review`}/>
       <div className='nodeParser' key={posts.id}>
         <PostStyles>
           <h1>{posts.title}</h1>
