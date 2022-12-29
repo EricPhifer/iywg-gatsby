@@ -15,10 +15,10 @@ const open = css`
 
 const closed = css`
   width: 0;
-  background: transparent;
+  background: var(--white);
   cursor: pointer;
-  margin-left: -2em;
-  padding-left: 2em;
+  margin-left: -2.7em;
+  padding-left: 3em;
 `
 
 export default styled(SearchBox)`
