@@ -39,7 +39,7 @@ const PostStyles = styled.div`
 export default function PostTemplate({ data: { posts } }) {
   return (
     <>
-      <Seo title={`${posts.name} Review`}/>
+      <Seo title='Posted Reviews'/>
       <div className='nodeParser' key={posts.id}>
         <PostStyles>
           <h1>{posts.title}</h1>
