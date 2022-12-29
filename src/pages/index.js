@@ -99,7 +99,17 @@ export default function HomeTemplate({data}) {
         <h2 className='sectionTitle'>Website Reviews</h2>
         {posts.map((post) => (
           <div className='postCard' key={post.id}>
-            <MuxPlayer />
+            {post.video === null ? 
+              <MuxPlayer />
+              : <MuxPlayer 
+                streamType='on-demand'
+                playbackId={post.video.asset.playbackId}
+                metadata={{
+                  video_id: `${post.video.asset.assetId}`,
+                  video_title: `${post.title}`,
+                }}
+              /> 
+            }
             <Link to={`/posts/${post.slug.current}`} >
               <h3>{post.title}</h3>
             </Link>
