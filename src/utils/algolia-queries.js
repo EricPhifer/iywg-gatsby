@@ -1,8 +1,7 @@
 const indexName = `Pages`
 
 const pageQuery = `{
-  pages: allMarkdownRemark(
-    allSanityPost {
+  pages: allSanityPost {
       edges {
         node {
           id
