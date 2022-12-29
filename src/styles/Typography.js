@@ -8,6 +8,7 @@ const Typography = createGlobalStyle`
 
   body {
     font-size: 1.5rem;
+    color: var(--black);
   }
 
   h1,h2,h3,h4,h5,h6 {
@@ -17,9 +18,9 @@ const Typography = createGlobalStyle`
   
   a {
     text-decoration: none;
-    color: var(--red);
+    color: var(--blue);
     &:hover {
-      color: var(--lightred);
+      color: var(--lightblue);
     }
   }
 `;

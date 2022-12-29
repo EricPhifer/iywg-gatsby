@@ -20,6 +20,26 @@ module.exports = {
   "gatsby-plugin-google-gtag", 
   "gatsby-plugin-sitemap", 
   {
+    resolve: 'gatsby-plugin-sanity-image',
+    options: {
+      projectId: '1ei8rzqn',
+      dataset: 'production',
+    }
+  },
+  {
+    resolve: "gatsby-plugin-robots-txt",
+    options: {
+      host: 'https://isyourwebsitegood.com',
+      sitemap: 'https://isyourwebsitegood.com/sitemap/sitemap-index.xml',
+      policy: [
+        {
+          userAgent: '*',
+          allow: '/',
+        }
+      ]
+    }
+  },
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
