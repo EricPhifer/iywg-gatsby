@@ -9,6 +9,10 @@ const SiteStyles = styled.div`
   margin-top: 100px;
   width: 100vw;
   min-height: 100vh;
+  padding-bottom: 40px;
+  @media only screen and (max-width: 950px) {
+    padding-bottom: 63px;
+  }
 `;
 
 export default function Layout({ children }) {

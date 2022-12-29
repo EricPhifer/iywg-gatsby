@@ -14,6 +14,9 @@ const FooterStyles = styled.footer`
   .inline {
     display: inline-flex;
   }
+  .footerContainer {
+    padding-bottom: 40px;
+  }
   .lowerFooter {
     width: 100%;
     padding: 1rem 0;
@@ -64,6 +67,9 @@ const FooterStyles = styled.footer`
         flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
+      }
+      .privTerms li {
+        padding-bottom: 0;
       }
     }
   }

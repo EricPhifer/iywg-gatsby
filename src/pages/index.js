@@ -20,9 +20,9 @@ const HomeStyles = styled.main`
       text-align: center;
     }
     h2 {
-      max-width: 800px;
+      max-width: 485px;
       margin: 0 auto;
-      padding: 0 2rem 3rem;
+      padding: 0 2rem 5rem;
       font-size: 2rem;
       text-align: center;
     }
@@ -38,7 +38,7 @@ const HomeStyles = styled.main`
     grid-column: 1 / span 3;
     text-align: left;
     font-size: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
   }
   h3 {
     font-size: 2rem;
@@ -73,6 +73,14 @@ const HomeStyles = styled.main`
       height: 225px;
     }
   }
+  @media only screen and (max-width: 320px) {
+    .header h1 {
+      font-size: 3.5rem;
+    }
+    .header h2 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 
@@ -82,7 +90,7 @@ export default function HomeTemplate({data}) {
     <>
       <HomeStyles>
         <div className='header'>
-          <h1>What Makes a website good or bad?</h1>
+          <h1>What Makes a website good?</h1>
           <h2>
             Six categories that make or break a website and the one thing that rules them all
           </h2>
