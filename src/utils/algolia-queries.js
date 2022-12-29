@@ -20,6 +20,9 @@ const pageQuery = `{
           categories {
             title
           }
+          internal {
+            contentDigest
+          }
         }
       }
     }
