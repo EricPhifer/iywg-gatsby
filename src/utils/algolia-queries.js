@@ -9,8 +9,17 @@ const pageQuery = `{
           slug {
             current
           }
-          _rawBody
-          _rawCategories
+          author {
+            name
+          }
+          body {
+            children {
+              text
+            }
+          }
+          categories {
+            title
+          }
         }
       }
     }
