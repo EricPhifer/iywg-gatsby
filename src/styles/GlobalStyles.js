@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-import globalbg from '../images/globalbg.svg';
+import globalbgdesktop from '../images/globalbgdesktop.svg';
+import globalbgmobile from '../images/globalbgmobile.svg';
+import globalbgportrait from '../images/globalbgportrait.svg';
+import globalbgtablet from '../images/globalbgtablet.svg';
 
 const GlobalStyles = createGlobalStyle`
   /* CSS Reset by Mirkov Sasa https://github.com/mirkovsasa/CSS-Reset/blob/main/Reset.css */
@@ -84,14 +87,24 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100vw;
     margin: 0;
   }
-  // Source reference for SVG: https://i.pinimg.com/originals/a8/ca/2d/a8ca2d7bcce78849895e921b22a5cfef.jpg
   html {
-    background-image: url(${globalbg});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed;
     overflow-x: hidden;
+    @media only screen and (min-width: 1220px) {
+      background-image: url(${globalbgdesktop})
+    }
+    @media only screen and (max-width: 1219px) {
+      background-image: url(${globalbgportrait})
+    }
+    @media only screen and (max-width: 900px) {
+      background-image: url(${globalbgtablet})
+    }
+    @media only screen and (max-width: 500px) {
+      background-image: url(${globalbgmobile})
+    }
   }
   body {
     position: relative;
