@@ -95,10 +95,6 @@ export default function HomeTemplate({ data }) {
             <HomeStyles>
                 <div className="header">
                     <h1>What Makes a website good?</h1>
-                    <h2>
-                        Six categories that make or break a website and the one thing that rules
-                        them all
-                    </h2>
                     {home.map((main) => (
                         <div key={main.id}>
                             {main.video === null ? (
