@@ -1,6 +1,6 @@
 import MuxPlayer from '@mux/mux-player-react';
 import { graphql, Link } from 'gatsby';
-import React from 'react';
+import React from 'react'; //eslint-disable-line
 import styled from 'styled-components';
 import Seo from '../components/Seo';
 

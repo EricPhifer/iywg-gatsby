@@ -15,7 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@mux/mux-player-react": "^1.5.1",
+    "@mux/mux-player-react": "^1.7.1",
     "@portabletext/react": "^2.0.0",
     "algoliasearch": "^4.14.3",
     "babel-plugin-styled-components": "^2.0.7",
