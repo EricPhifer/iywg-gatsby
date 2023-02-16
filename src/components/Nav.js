@@ -1,7 +1,11 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import SanityImage from 'gatsby-plugin-sanity-image';
-import React from 'react';
+import React from 'react'; //eslint-disable-line
 import styled from 'styled-components';
+import desktopnav from '../images/desktopnav.svg';
+import mobilenav from '../images/mobilenav.svg';
+import portraitnav from '../images/portraitnav.svg';
+import tabletnav from '../images/tabletnav.svg';
 import Search from './search';
 
 const searchIndices = [{ name: `Pages`, title: `Pages` }];
@@ -15,6 +19,23 @@ const Navigation = styled.nav`
     align-items: center;
     justify-content: center;
     z-index: 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    @media only screen and (min-width: 1220px) {
+        background-image: url(${desktopnav});
+    }
+    @media only screen and (max-width: 1219px) {
+        background-image: url(${portraitnav});
+    }
+    @media only screen and (max-width: 900px) {
+        background-image: url(${tabletnav});
+    }
+    @media only screen and (max-width: 500px) {
+        background-image: url(${mobilenav});
+    }
     .inline {
         display: flex;
         align-items: center;
@@ -83,7 +104,7 @@ export default function Nav() {
                 <div className="limit inline" key={node.id}>
                     <Link to="/">
                         <SanityImage
-                            {...node.navlogo}
+                            {...node.navlogo} //eslint-disable-line
                             alt={node.mainalt}
                             style={{
                                 height: '100px',

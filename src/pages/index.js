@@ -6,7 +6,7 @@ import Seo from '../components/Seo';
 
 const HomeStyles = styled.main`
     max-width: 1080px;
-    margin: 4rem auto 0;
+    margin: 10rem auto 0;
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 1fr));
     justify-items: center;
@@ -16,8 +16,9 @@ const HomeStyles = styled.main`
         margin-top: 5rem;
         margin-bottom: 5rem;
         h1 {
+            margin-bottom: 3rem;
             text-transform: uppercase;
-            font-size: 4rem;
+            font-size: 5rem;
             text-align: center;
         }
         h2 {
