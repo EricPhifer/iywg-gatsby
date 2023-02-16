@@ -19,10 +19,10 @@ const Navigation = styled.nav`
     align-items: center;
     justify-content: center;
     z-index: 100;
+    background-color: var(--white);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
-    background-attachment: fixed;
     overflow-x: hidden;
     @media only screen and (min-width: 1220px) {
         background-image: url(${desktopnav});

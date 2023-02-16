@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: 100%;
       vertical-align: baseline;
       background: transparent;
+      box-sizing: border-box;
   }
 
   /* Setting border box model for easier sizing of elements */
