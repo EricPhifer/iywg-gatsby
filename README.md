@@ -7,5 +7,5 @@
 </h2>
 
 <p>
-  This Vlog is a space for everyone to access reviews about websites and learn what they can do better.
+  This Vlog is a space for everyone to access reviews about websites and learn how they can improve them.
 </p>
