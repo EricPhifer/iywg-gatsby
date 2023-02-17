@@ -12,27 +12,27 @@ const HomeStyles = styled.main`
     justify-items: center;
     gap: 2rem;
     .header {
+        max-height: 62vh;
+        position: relative;
+        display: grid;
+        justify-self: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding: 0 0.5rem;
         grid-column: 1 / span 3;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+        text-align: center;
         h1 {
-            margin-bottom: 3rem;
             text-transform: uppercase;
-            font-size: 5rem;
-            text-align: center;
+            font-size: 6.1vmin;
+            padding: 0 0.5rem 1rem;
         }
         h2 {
-            max-width: 485px;
-            margin: 0 auto;
-            padding: 0 2rem 5rem;
-            font-size: 2rem;
-            text-align: center;
+            padding: 1rem 0.5rem 0;
+            font-size: 4.7vmin;
         }
         .headVideo {
-            max-width: 1080px;
-            width: 100vw;
-            margin: 0;
-            padding: 0;
+            width: 100%;
         }
     }
     .sectionTitle {
@@ -40,7 +40,6 @@ const HomeStyles = styled.main`
         grid-column: 1 / span 3;
         text-align: left;
         font-size: 3rem;
-        padding-bottom: 5rem;
     }
     h3 {
         font-size: 2rem;
@@ -77,14 +76,6 @@ const HomeStyles = styled.main`
             height: 225px;
         }
     }
-    @media only screen and (max-width: 320px) {
-        .header h1 {
-            font-size: 3.5rem;
-        }
-        .header h2 {
-            font-size: 1.5rem;
-        }
-    }
 `;
 
 export default function HomeTemplate({ data }) {
@@ -95,7 +86,7 @@ export default function HomeTemplate({ data }) {
             <Seo title="Home Page" />
             <HomeStyles>
                 <div className="header">
-                    <h1>What Makes a website good?</h1>
+                    <h1>What is a good website?</h1>
                     {home.map((main) => (
                         <div key={main.id}>
                             {main.video === null ? (
@@ -113,6 +104,7 @@ export default function HomeTemplate({ data }) {
                             )}
                         </div>
                     ))}
+                    <h2>Six Categories for an Amazing Website</h2>
                 </div>
                 <h2 className="sectionTitle">Website Reviews</h2>
                 {posts.map((post) => (

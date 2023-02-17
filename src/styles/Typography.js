@@ -2,7 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const Typography = createGlobalStyle`
   html {
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+    font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida,
+    'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;    
     color: #000;
   }
 

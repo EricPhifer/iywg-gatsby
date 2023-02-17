@@ -2,10 +2,10 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import SanityImage from 'gatsby-plugin-sanity-image';
 import React from 'react'; //eslint-disable-line
 import styled from 'styled-components';
-import desktopnav from '../images/desktopnav.svg';
-import mobilenav from '../images/mobilenav.svg';
-import portraitnav from '../images/portraitnav.svg';
-import tabletnav from '../images/tabletnav.svg';
+import desktopnav from '../images/desktopnav.gif';
+import mobilenav from '../images/mobilenav.gif';
+import portraitnav from '../images/portraitnav.gif';
+import tabletnav from '../images/tabletnav.gif';
 import Search from './search';
 
 const searchIndices = [{ name: `Pages`, title: `Pages` }];
