@@ -19,23 +19,22 @@ const Navigation = styled.nav`
     align-items: center;
     justify-content: center;
     z-index: 100;
-    background-color: var(--white);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top left;
-    overflow-x: hidden;
-    @media only screen and (min-width: 1220px) {
-        background-image: url(${desktopnav});
-    }
-    @media only screen and (max-width: 1219px) {
-        background-image: url(${portraitnav});
-    }
-    @media only screen and (max-width: 900px) {
-        background-image: url(${tabletnav});
-    }
-    @media only screen and (max-width: 500px) {
-        background-image: url(${mobilenav});
-    }
+    background-color: rgba(179, 251, 212, 0.8);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: top left;
+    // @media only screen and (min-width: 1220px) {
+    //     background-image: url(${desktopnav});
+    // }
+    // @media only screen and (max-width: 1219px) {
+    //     background-image: url(${portraitnav});
+    // }
+    // @media only screen and (max-width: 900px) {
+    //     background-image: url(${tabletnav});
+    // }
+    // @media only screen and (max-width: 500px) {
+    //     background-image: url(${mobilenav});
+    // }
     .inline {
         display: flex;
         align-items: center;
