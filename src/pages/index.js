@@ -12,7 +12,7 @@ const HomeStyles = styled.main`
     justify-items: center;
     gap: 2rem;
     .header {
-        max-height: 62vh;
+        max-height: 100vh;
         position: relative;
         display: grid;
         justify-self: center;
