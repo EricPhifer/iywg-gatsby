@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 import globalbgdesktop from '../images/globalbgdesktop.gif';
-import globalbgmobile from '../images/globalbgmobile.gif';
 import globalbgportrait from '../images/globalbgportrait.gif';
 import globalbgtablet from '../images/globalbgtablet.gif';
 
@@ -104,7 +103,7 @@ const GlobalStyles = createGlobalStyle`
       background-image: url(${globalbgtablet})
     }
     @media only screen and (max-width: 500px) {
-      background-image: url(${globalbgmobile})
+      background-image: url(${globalbgtablet})
     }
   }
   body {
